@@ -6,11 +6,9 @@
 
 using wlp::MCP3021;
 
-constexpr uint8_t address = 0x05;
 constexpr uint16_t ref_voltage = 5000;  // in mV
 
-// address from 0 to 7
-MCP3021 mcp3021{address};
+MCP3021 mcp3021;
 
 void setup() {
   uart.begin(9600);
