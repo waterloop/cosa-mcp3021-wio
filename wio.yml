@@ -2,7 +2,7 @@ type: pkg
 
 project:
   name: cosa-mcp3021-wio
-  version: 0.0.1
+  version: 1.0.0
   keywords:
   - wio
   - pkg
