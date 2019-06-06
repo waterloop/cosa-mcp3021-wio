@@ -16,7 +16,7 @@ class MCP3021 : TWI::Driver {
    * the constructor.
    * @param addr address for the chip
    */
-  MCP3021(uint8_t addr = 0b101);
+  MCP3021(uint8_t addr = 0x05);
 
   /**
    * Sample the given channel and return converted value.
@@ -33,7 +33,7 @@ class MCP3021 : TWI::Driver {
   static uint16_t voltage(uint16_t data, uint32_t vref);
 
  private:
-  static constexpr uint8_t mcp3021BaseAddr = 0b10010001;
+  static constexpr uint8_t mcp3021BaseAddr = 0x4D;
 };
 }
 

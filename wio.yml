@@ -15,5 +15,5 @@ targets:
     src: tests
     platform: avr
     framework: cosa
-    board: mega2560
+    board: uno
 
