@@ -19,14 +19,14 @@ class MCP3021 : TWI::Driver {
   MCP3021(uint8_t addr = 0x05);
 
   /**
-   * Sample the given channel and return converted value.
+   * Read the given channel and return the result.
    * @return sample
    */
-  uint16_t sample();
+  uint16_t read();
 
   /**
-   * Convert sampled data into voltage
-   * @param data sampled data
+   * Convert sampled data (result) into voltage
+   * @param data sampled data (result)
    * @param vref voltage reference
    * @return voltage for sampled data
    */

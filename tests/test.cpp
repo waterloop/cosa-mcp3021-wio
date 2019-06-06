@@ -16,8 +16,9 @@ void setup() {
 }
 
 void loop() {
-  auto data = mcp3021.sample();
+  auto data = mcp3021.read();
   auto voltage = MCP3021::voltage(data, ref_voltage);
 
-  trace << "Sampled Data[ADC: " << data << ", mV: " << voltage << "]" << endl;
+  trace << "[ADC: " << data << ", mV: " << voltage << "]" << endl;
+  delay(500);
 }

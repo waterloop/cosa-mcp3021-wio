@@ -8,7 +8,7 @@ static constexpr uint16_t resolution = 1023;
 
 MCP3021::MCP3021(uint8_t addr) : Driver(mcp3021BaseAddr | addr) {}
 
-uint16_t MCP3021::sample() {
+uint16_t MCP3021::read() {
   twi.acquire(this);
 
   uint8_t dataRead[2];
